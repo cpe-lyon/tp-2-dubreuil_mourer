@@ -167,7 +167,7 @@ else
 fi  
 ```
 
-En premier lieu, on vérifie si l'utilisateur a bien rentrer un paramètre. Si ce n'est pas le cas on lui indique l'utilisation du programme. `${0##*/}` permet de récupérer le 1er paramètre de la commande tapée soit le nom du fichier lancé auquel on retire le `./`.  
+En premier lieu, on vérifie si l'utilisateur a bien rentrer un paramètre. Si ce n'est pas le cas on lui indique l'utilisation du programme. `${0##*/}` permet de récupérer le 1er paramètre de la commande tapée soit le nom du fichier lancé auquel on retire le `./` si le fichier n'a pas été exécuté en tant que commande.  
 Ensuite, on vérifie que l'utilisateur existe grâce à la fonction `is_user`.  
 Pour ce faire, on récupère les noms d'utilisateurs dans le fichier `passwd` grace à la commande `$(cut -d: -f1 /etc/passwd)`.  
 On itère ensuite sur la liste récupérée en vérifiant que le nom rentré est dans cette liste.
