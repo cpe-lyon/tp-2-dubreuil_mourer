@@ -63,7 +63,7 @@ Résultat de `printenv PATH`
 
 ### 9. Quelle différence y a-t-il entre donner une valeur vide à une variable et l’utilisation de la commande unset ?
 
-``unset`` supprime la variable et donc désalloue la mémoire qui lui était donnée. Donner une valeur vide à une variable fait qu'elle existe toujours mais quand on fait appel à elle, on pointe sur une valeur vide.
+`unset` supprime la variable et donc désalloue la mémoire qui lui était donnée. Donner une valeur vide à une variable fait qu'elle existe toujours mais quand on fait appel à elle, on pointe sur une valeur vide.
 
 ### 10. Utilisez la commande echo pour écrire exactement la phrase : $HOME = chemin (où chemin est votre dossier personnel d’après bash)
 
